@@ -1,0 +1,83 @@
+.products-container {
+    width: 100%;
+    height: auto;
+    transform: translateY(100px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
+
+.product-card {
+    width: 250px;
+    min-width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 10px 0px 10px;
+    margin: 15px;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.product-card:hover {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.216);
+    padding-bottom: 20px;
+    transition: .3s;
+}
+
+.img-product1,
+.img-product2,
+.img-product3,
+.img-product4 {
+    background-repeat: no-repeat;
+    background-size: 230px;
+    width: 230px;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+}
+
+.img-product1 {
+    background-image: url(../../images/ventana.jpg);
+    background-size: 260px;
+    transform: translateX(-10px);
+}
+
+.img-product2 {
+    background-image: url(../../images/puerta-corrediza.png);
+}
+
+.img-product3 {
+    background-image: url(../../images/ventiluz.png);
+}
+
+.img-product4 {
+    background-image: url(../../images/persiana.png);
+    background-size: 150px;
+    width: 150px;
+    align-self: center;
+}
+
+.product-card span {
+    font-size: 1.3em;
+    color: #221F1F;
+    text-align: center;
+    padding: 22px;
+    border-top: 1px solid gray;
+}
+
+@media only screen and (max-width: 890px) {
+    .products-container {
+        width: 100%;
+        height: auto;
+        transform: translateY(100px);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
